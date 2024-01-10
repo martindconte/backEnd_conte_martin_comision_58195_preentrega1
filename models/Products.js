@@ -35,8 +35,13 @@ class ProductManager {
         }
     }
 
-    getProducts = async () => {
-        return await this._readFile() || [];
+    getProducts = async (quantity) => {
+        const productsAll = await this._readFile() || [];
+        const limit = Number(quantity);
+        const products = limit > 0 ? productsAll.slice(0, limit) : productsAll;
+        return products
+                
+        // return await this._readFile() || [];
     }
 
     getProductsById = async (id) => {
@@ -80,6 +85,10 @@ class ProductManager {
         }
     };
 
+    /**
+     * 
+     * @returns {Array[Object]}
+     */
     _readFile = async () => {
         try {
             const fileContent = await fs.promises.readFile(this.filePath, 'utf-8');
@@ -104,7 +113,7 @@ class ProductManager {
     }
 
     _validateData = ( title, description, code, price, status = true, stock, category, thumbnails ) => {
-        if (!title || !description || !code || !stock || !category) throw new Error('Las propiedades title, description, price, code, stock y category son obligatorias');
+        if (!title || !description || !code || !stock || !category || !status) throw new Error('Las propiedades title, description, price, code, stock y category son obligatorias');
         if (typeof title !== 'string') throw new Error('title debe ser un string');
         if (typeof description !== 'string') throw new Error('description debe ser un string');
         if (typeof code !== 'string') throw new Error('code debe ser un string');

@@ -4,7 +4,7 @@ const productManager = new ProductManager('public/data')
 
 const getProducts = async ( req, res ) => {
     try {
-        const products = await productManager.getProducts()
+        const products = await productManager.getProducts( req.query.limit )
         res.json(products)
     } catch (error) {
         console.log(error)
@@ -47,7 +47,6 @@ const deleteProduct = async ( req, res ) => {
         
     }
 }
-
 
 export {
     getProducts,
