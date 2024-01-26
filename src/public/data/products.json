@@ -1,26 +1,26 @@
 [
     {
         "id": "0w0CVJPPy",
-        "title": "MODIFICADO DESDE PUT",
-        "description": "MODIFICADO DESDE PUT",
-        "code": "MODIFICADO DESDE PUT",
+        "title": "REVISAR FUNCIONAMIENTO",
+        "description": "REVISAR FUNCIONAMIENTO",
+        "code": "REVISAR FUNCIONAMIENTO",
         "price": 1200,
         "status": true,
         "stock": 10,
-        "category": "MODIFICADO DESDE PUT",
+        "category": "REVISAR FUNCIONAMIENTO",
         "thumbnails": [
             "/img/img1"
         ]
     },
     {
         "id": "GtPyLGN0p",
-        "title": "Producto 123456",
-        "description": "Descripción del producto 1",
-        "code": "desee",
+        "title": "REVISAR FUNCIONAMIENTO",
+        "description": "REVISAR FUNCIONAMIENTO",
+        "code": "REVISAR FUNCIONAMIENTO",
         "price": 1200,
         "status": true,
         "stock": 10,
-        "category": "hola",
+        "category": "desde otra PC",
         "thumbnails": [
             "/img/img1"
         ]
@@ -30,20 +30,6 @@
         "title": "Producto 123456",
         "description": "Descripción del producto 1",
         "code": "sssss",
-        "price": 1200,
-        "status": true,
-        "stock": 10,
-        "category": "hola",
-        "thumbnails": [
-            "/img/img1",
-            "img2"
-        ]
-    },
-    {
-        "id": "3ZFfq60B1",
-        "title": "Producto 123456",
-        "description": "Descripción del producto 1",
-        "code": "dsddsadecw",
         "price": 1200,
         "status": true,
         "stock": 10,
@@ -75,17 +61,6 @@
         "thumbnails": []
     },
     {
-        "id": "U0Lssaw15",
-        "title": "Producto 123456",
-        "description": "Descripción del producto 1",
-        "code": "ESTE ES EL ULTIMO DE HOY 20240108",
-        "price": 1200,
-        "status": true,
-        "stock": 10,
-        "category": "hola",
-        "thumbnails": []
-    },
-    {
         "id": "KjvQKnzRR",
         "title": "Producto 123456",
         "description": "Descripción del producto 1",
@@ -95,5 +70,44 @@
         "stock": 10,
         "category": "hola",
         "thumbnails": []
+    },
+    {
+        "id": "AqfB0jLtQ",
+        "title": "AGREGANDO REVISION",
+        "description": "DAGREGANDO REVISION",
+        "code": "REVISION DE CREACION",
+        "price": 1200,
+        "status": true,
+        "stock": 10,
+        "category": "hola",
+        "thumbnails": []
+    },
+    {
+        "id": "BTibEEMhy",
+        "title": "Producto pc otra",
+        "description": "Descripción del producto pc",
+        "code": "nuevo code",
+        "price": 1200,
+        "status": true,
+        "stock": 10,
+        "category": "hola",
+        "thumbnails": [
+            "/img/img1",
+            "img2"
+        ]
+    },
+    {
+        "id": "01RDHdWir",
+        "title": "Producto pc otra",
+        "description": "Descripción del producto pc",
+        "code": "fdsfdrs",
+        "price": 1200,
+        "status": true,
+        "stock": 10,
+        "category": "hola",
+        "thumbnails": [
+            "/img/img1",
+            "img2"
+        ]
     }
 ]

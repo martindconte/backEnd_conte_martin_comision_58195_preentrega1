@@ -2,11 +2,11 @@
   "name": "coder-backend-martin-conte",
   "version": "1.0.0",
   "description": "BackEnd Curso Coderhouse Comision 58195",
-  "main": "index.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "author": "Martin Daniel Conte",
   "license": "ISC",

@@ -1,6 +1,7 @@
 import express from 'express';
-import productsRouter from './router/productsRoutes.js';
-import cartRouter from './router/cartRoutes.js'
+import productsRouter from './router/products.routes.js';
+import cartRouter from './router/cart.routes.js'
+import __dirname from './util.js';
 
 // Crear la app
 const app = express();
@@ -8,7 +9,8 @@ app.use(express.urlencoded( { extended: true } ))
 app.use(express.json())
 
 // Carpeta Publica
-app.use( express.static( 'public' ) )
+app.use(express.static(__dirname + '/public'))
+console.log(__dirname)
 
 // Routing
 app.use('/api/products', productsRouter)
