@@ -49,7 +49,7 @@ const deleteProduct = async (req, res) => {
     try {
         console.log('Eliminando...')
         await productManager.deleteProduct(req.params.pid)
-        res.send(res.send(`<h1 style="color: red">Product id ${req.params.id} has been deleted</h1>`))
+        res.send(`<h1 style="color: red">Product id ${req.params.id} has been deleted</h1>`)
     } catch (error) {
         console.log(error.message)
         res.status(404).send({ error });
